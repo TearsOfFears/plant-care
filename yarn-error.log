@@ -1,0 +1,37 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\nazar\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add nestjs
+
+PATH: 
+  C:\Users\nazar\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\nazar\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python27\Scripts;C:\Python27;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\Amazon\AWSCLIV2;C:\Program Files\Amazon\SessionManagerPlugin\bin;C:\Users\nazar\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\dotnet;C:\Program Files\nodejs;C:\Program Files\Cloudflare\Cloudflare WARP;C:\Users\nazar\.windows-build-tools\python27;C:\Users\nazar\AppData\Roaming\nvm\v16.17.1\node_modules\windows-build-tools\node_modules\.bin;C:\Users\nazar\AppData\Roaming\nvm\v16.17.1\node_modules\node_modules\.bin;C:\Users\nazar\AppData\Roaming\nvm\v16.17.1\node_modules\.bin;C:\Users\nazar\AppData\Local\Pub\Cache\bin;C:\Users\nazar\AppData\Roaming\nvm\node_modules\.bin;C:\Users\nazar\AppData\Roaming\Pub\Cache\bin;C:\tools\dart-sdk\bin;F:\flutter\bin;C:\ProgramData\chocolatey\lib\fvm\bin;C:\Users\nazar\AppData\Roaming\node_modules\.bin;C:\Users\nazar\AppData\node_modules\.bin;C:\Users\nazar\node_modules\.bin;C:\Users\node_modules\.bin;C:\node_modules\.bin;C:\Users\nazar\AppData\Roaming\nvm\v16.17.1\node_modules\npm\node_modules\@npmcli\run-script\lib\node-gyp-bin;C:\Python311\Scripts;C:\Python311;C:\Users\nazar\AppData\Local\Microsoft\WindowsApps;C:\Users\nazar\AppData\Roaming\npm;C:\Users\nazar\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nazar\AppData\Local\Programs\oh-my-posh\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.16.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: I:\smart-home2\package.json: Unexpected token p in JSON at position 93
+      at JSON.parse (<anonymous>)
+      at C:\Users\nazar\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\nazar\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\nazar\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "smart-home2",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    private: true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

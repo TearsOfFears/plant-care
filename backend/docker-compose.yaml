@@ -1,0 +1,49 @@
+services:
+  mosquitto:
+    image: eclipse-mosquitto
+    restart: always
+    volumes:
+      - type: bind
+        source: ./config/
+        target: /mosquitto/config/
+      - type: bind
+        source: ./log/
+        target: /mosquitto/log/
+      - type: volume
+        source: data
+        target: /mosquitto/data/
+    ports:
+      - target: 1883
+        published: 1883
+        protocol: tcp
+        mode: host
+      - target: 9001
+        published: 9001
+        protocol: tcp
+        mode: host
+  db:
+    image: timescale/timescaledb-ha:pg16
+    restart: always
+    expose:
+      - '5432' # Publishes 5433 to other containers but NOT to host machine
+    ports:
+      - '5434:5432'
+    environment:
+      - POSTGRES_DB=smart-home
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=test
+    volumes:
+      - postgresdata:/home/postgres/pgdata/data/
+volumes:
+  data:
+    name: "mqtt-broker-data"
+  postgresdata:
+    external: false
+    driver: local
+    driver_opts:
+      type: 'none'
+      o: 'bind'
+      device: '/data/db-data'
+
+
+
